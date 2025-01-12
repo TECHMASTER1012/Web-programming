@@ -1,0 +1,197 @@
+<!-- reg.html -->  
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+</head>
+<body style="background-color: #e0f7fa; font-family: Arial, sans-serif; color: #004d40;">
+
+    <h1 style="text-align: center; color: #00695c;">Welcome to the Registration Page</h1>
+    <p style="text-align: center; font-size: larger;">Please fill out the form below to register:</p>
+
+    <form action="success.html" method="post" style="max-width: 1000px; margin: auto; background-color: #ffffff; padding: 20px;">
+        <table border="0" cellpadding="8" cellspacing="0" style="width: 100%; font-size: medium;">
+            <tr>
+                <td style="width: 30%;"><label for="firstName">First Name:</label></td>
+                <td><input type="text" id="firstName" name="firstName" required style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td><label for="lastName">Last Name:</label></td>
+                <td><input type="text" id="lastName" name="lastName" required style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob" required style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age" required style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td><label for="category">Category:</label></td>
+                <td>
+                    <select id="category" name="category" required style="width: 100%;">
+                        <option value="Select">Select</option>
+                        <option value="General">General</option>
+                        <option value="OBC">OBC</option>
+                        <option value="SC">SC</option>
+                        <option value="ST">ST</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="medium">Medium of Schooling:</label></td>
+                <td>
+                    <input type="radio" id="english" name="medium" value="English">
+                    <label for="english">English</label>
+                    <input type="radio" id="hindi" name="medium" value="Hindi">
+                    <label for="hindi">Hindi</label>
+                    <input type="radio" id="other" name="medium" value="Other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3 style="text-align: center; color: #00695c;">Qualification Details</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table border="1" cellpadding="4" cellspacing="0" style="width: 100%; background-color: #e8f5e9; border-collapse: collapse;">
+                        <tr style="background-color: #004d40; color: #ffffff;">
+                            <th>Level</th>
+                            <th>Name of School/College</th>
+                            <th>Board/Course</th>
+                            <th>Percentage</th>
+                            <th>Year of Passing</th>
+                        </tr>
+                        <tr>
+                            <td>10th</td>
+                            <td><input type="text" name="school10" required style="width: 100%;"></td>
+                            <td><input type="text" name="course10" required style="width: 100%;"></td>
+                            <td><input type="number" name="percent10" required style="width: 100%;"></td>
+                            <td><input type="number" name="year10" required style="width: 100%;"></td>
+                        </tr>
+                        <tr>
+                            <td>12th</td>
+                            <td><input type="text" name="school12" required style="width: 100%;"></td>
+                            <td><input type="text" name="course12" required style="width: 100%;"></td>
+                            <td><input type="number" name="percent12" required style="width: 100%;"></td>
+                            <td><input type="number" name="year12" required style="width: 100%;"></td>
+                        </tr>
+                        <tr>
+                            <td>Graduation</td>
+                            <td><input type="text" name="collegeGrad" style="width: 100%;"></td>
+                            <td><input type="text" name="courseGrad" style="width: 100%;"></td>
+                            <td><input type="number" name="percentGrad" style="width: 100%;"></td>
+                            <td><input type="number" name="yearGrad" style="width: 100%;"></td>
+                        </tr>
+                        <tr>
+                            <td>Masters</td>
+                            <td><input type="text" name="collegeMasters" style="width: 100%;"></td>
+                            <td><input type="text" name="courseMasters" style="width: 100%;"></td>
+                            <td><input type="number" name="percentMasters" style="width: 100%;"></td>
+                            <td><input type="number" name="yearMasters" style="width: 100%;"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fatherName">Father's Name:</label></td>
+                <td><input type="text" id="fatherName" name="fatherName" required style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td><label for="fatherQualification">Father's Qualification:</label></td>
+                <td>
+                    <select id="select" name="select" required style="width: 100%;">
+                        <option value="Select">Select</option>
+                        <option value="Graduation">Graduation</option>
+                        <option value="Masters">Masters</option>
+                        <option value="Matriculation">Matriculation</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="motherName">Mother's Name:</label></td>
+                <td><input type="text" id="motherName" name="motherName" required style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td><label for="motherQualification">Mother's Qualification:</label></td>
+                <td>
+                    <select id="select" name="select" required style="width: 100%;">
+                        <option value="Select">Select</option>
+                        <option value="Graduation">Graduation</option>
+                        <option value="Masters">Masters</option>
+                        <option value="Matriculation">Matriculation</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="hobbies">Hobbies:</label></td>
+                <td><textarea id="hobbies" name="hobbies" rows="3" cols="50" style="width: 100%;"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="preferredCourse">Preferred Course:</label></td>
+                <td><input type="text" id="preferredCourse" name="preferredCourse" style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile Number:</label></td>
+                <td><input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td><label for="Address">Present Address:</label></td>
+                <td>
+                    <textarea id="Address" name="Address" rows="3" cols="40" required></textarea><br>
+                    <label for="presentCity">City:</label>
+                    <input type="text" id="City" name="City" required><br>
+                    <label for="State">State:</label>
+                    <input type="text" id="State" name="State" required><br>
+                    <label for="Pincode">Pincode:</label>
+                    <input type="number" id="Pincode" name="Pincode" required><br>
+                    <label for="Country">Country:</label>
+                    <input type="text" id="Country" name="Country" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Address">Permanent Address:</label></td>
+                <td>
+                    <textarea id="Address" name="Address" rows="3" cols="40" required></textarea><br>
+                    <label for="City">City:</label>
+                    <input type="text" id="City" name="City" required><br>
+                    <label for="State">State:</label>
+                    <input type="text" id="State" name="State" required><br>
+                    <label for="Pincode">Pincode:</label>
+                    <input type="number" id="Pincode" name="Pincode" required><br>
+                    <label for="Country">Country:</label>
+                    <input type="text" id="Country" name="Country" required>
+                </td>
+            </tr>
+            <!-- <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr> -->
+            <tr>
+                <td>
+                    <input type="checkbox" id="confirmation" name="confirmation" value="confirmation" required>
+                    <label for="confirmation">Would you like to Complete the Registration</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Register" style="background-color: #004d40; color: #ffffff; padding: 10px 20px; border: none; border-radius: 5px;">
+                    <input type="reset" value="Reset" style="background-color: #b71c1c; color: #ffffff; padding: 10px 20px; border: none; border-radius: 5px;">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- Firstpage.html -->
+<!DOCTYPE html>
+<html> 
+<head> <title>Registration Page</title></head>
+<body style="background-color: #e0f7fa; font-family: Arial, sans-serif; color: #004d40;">
+
+    <h1 style="text-align: center; color: #00695c;">Welcome to the Registration Page</h1>
+    <p style="text-align: center; font-size: larger;">Please fill out the details below to proceed:</p>
+    <form action="reg.html" method="post" style="max-width: 900px; margin: auto; background-color: #ffffff; padding: 20px;">
+        <table border="0" cellpadding="8" cellspacing="0" style="width: 100%; font-size: medium;">
+            <tr>
+                <td><label for="identity">Identity Type:</label></td>
+                <td>
+                    <select id="select" name="select" required style="width: 100%;">
+                        <option value="Select">Select</option>
+                        <option value="Aadhar card">Aadhar card</option>
+                        <option value="PAN Card">PAN Card</option>
+                        <option value="School/College Id card">School/College Id card</option>
+                        <option value="Marksheet">Marksheet</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="IdentityNumber">Unique Id Number:</label></td>
+                <td><input type="text" id="IdentityNumber" name="IdentityNumber" required style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="confirmation" name="confirmation" value="confirmation" required>
+                    <label for="confirmation">Would you like to proceed further</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Proceed" style="background-color: #004d40; color: #ffffff; padding: 10px 20px; border: none; border-radius: 5px;">
+                    <input type="reset" value="Reset" style="background-color: #b71c1c; color: #ffffff; padding: 10px 20px; border: none; border-radius: 5px;">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
